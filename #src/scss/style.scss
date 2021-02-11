@@ -1,0 +1,42 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+  @font-face {
+  font-family: $font_name;
+  font-display: swap;
+  src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+  font-weight: #{$weight};
+  font-style: #{$style};
+  }
+  }
+
+
+@import 'fonts';
+
+body {
+  font-size: 30px;
+  background: rgb(144, 144, 144);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+span{
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 12px;    
+  }
+}
+div{
+  background: url('../img/20190519_180341.jpg') 0 0 no-repeat;
+  font-size: 39px;
+  border-radius: 20px;
+  @media (max-width: 768px) {
+    font-size: 25px;    
+  }
+}
+.autoplacement-example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}

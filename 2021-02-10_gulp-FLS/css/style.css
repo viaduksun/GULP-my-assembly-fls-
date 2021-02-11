@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "17575";
+  font-display: swap;
+  src: url("../fonts/17575.woff") format("woff"), url("../fonts/17575.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "18917";
+  font-display: swap;
+  src: url("../fonts/18917.woff") format("woff"), url("../fonts/18917.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manege Demo Light";
+  font-display: swap;
+  src: url("../fonts/Manege Demo Light.woff") format("woff"), url("../fonts/Manege Demo Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 30px;
+  background: #909090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+span {
+  font-size: 20px;
+}
+
+.no-webp div {
+  background: url("../img/20190519_180341.jpg") 0 0 no-repeat;
+}
+
+div {
+  font-size: 39px;
+  border-radius: 20px;
+}
+
+.autoplacement-example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+
+.webp div {
+  background: url(../img/20190519_180341.webp) 0 0 no-repeat;
+}
+
+@media (max-width: 768px) {
+  span {
+    font-size: 12px;
+  }
+
+  div {
+    font-size: 25px;
+  }
+}
